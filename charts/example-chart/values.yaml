@@ -41,7 +41,8 @@ ingress:
     kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - paths: [/react210905]
+    - host: dev.cams7.ml
+      paths: [/react210905]
   tls: 
     - secretName: dev.cams7.ml
       hosts:
